@@ -1,1 +1,12 @@
-
+div{
+	display:flex;
+	flex-flow:column wrap;
+	width:25%;
+	gap:3px;
+}
+#button{
+	margin:20px;
+	max-width:70px;
+	justify-content:center;
+	align-self:center;
+}
