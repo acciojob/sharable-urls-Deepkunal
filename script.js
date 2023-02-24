@@ -5,7 +5,7 @@ var yearElement = document.querySelector("#year");
 var btn = document.querySelector("#button");
 
 function handleSubmit(event) {
-  event.preventDefault();
+  
   var h3Value = "https://localhost:8080/";
   var name = nameELement.value;
   var year = yearElement.value;
@@ -18,6 +18,8 @@ function handleSubmit(event) {
     h3Value += "?year=" + year;
   }
   h3.textContent = h3Value;
+	event.preventDefault();
 }
+
 
 form.addEventListener("submit", handleSubmit);
