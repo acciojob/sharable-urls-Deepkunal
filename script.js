@@ -1,5 +1,5 @@
 var form = document.querySelector("form");
-var h3 = document.querySelector("h3");
+var h3 = document.getElementById("url");
 var nameELement = document.querySelector("#name");
 var yearElement = document.querySelector("#year");
 var btn = document.querySelector("#button");
@@ -17,8 +17,8 @@ function handleSubmit(event) {
   } else if (!name && year) {
     h3Value += "?year=" + year;
   }
-  h3.textContent = h3Value;
-	event.preventDefault();
+  h3.innerText = h3Value;
+	//event.preventDefault();
 }
 
 
